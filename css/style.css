@@ -1,0 +1,72 @@
+html, body{
+	font-family:'Roboto Slab',serif;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.view {
+position: relative;
+overflow: hidden;
+background-color:#f9f9f9;
+color:#888;
+height:100%;
+}
+
+.view a{
+    cursor: pointer;
+    text-decoration: none;
+	color:#bbb;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.main, .main a {
+color:#444;
+height:100%;
+}
+
+.page-footer {
+background-color:#f9f9f9;
+color:#000;
+}
+
+.border-video {
+border:3px solid #f9f9f9;
+}
+
+.title {
+font-size:60px;
+color:#444;
+}
+
+.content {
+font-size:22px;
+color:#888;
+}
+
+.nav-link {
+font-size:2em;
+font-weight:700;
+color:#bbb;
+}
+
+h1,h2 {
+font-size:2em;
+font-weight:700;
+color:#bbb;
+}
+
+p {
+font-size:18px;
+}
+
+.copy {
+color:#bbb;
+}
+
+.nav-link.active,a:hover,h1:hover,h2:hover {
+color:#444;
+}
+
+
