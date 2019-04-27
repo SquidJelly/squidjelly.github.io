@@ -1,27 +1,28 @@
-html, body{
-	font-family:'Roboto Slab',serif;
-	max-width: 100%;
-	overflow-x: hidden;
+html,body {
+font-family:'Roboto Slab',serif;
+max-width:100%;
+}
+
+.logo {
+height:100px;
+width:auto;
 }
 
 .view {
-position: relative;
-overflow: hidden;
+position:relative;
+overflow:hidden;
 background-color:#f9f9f9;
 color:#888;
 height:100%;
 }
 
-.view a{
-    cursor: pointer;
-    text-decoration: none;
-	color:#bbb;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+.view a {
+cursor:pointer;
+text-decoration:none;
+color:#bbb;
 }
 
-.main, .main a {
+.main,.main a {
 color:#444;
 height:100%;
 }
@@ -45,18 +46,6 @@ font-size:22px;
 color:#888;
 }
 
-.nav-link {
-font-size:2em;
-font-weight:700;
-color:#bbb;
-}
-
-h1,h2 {
-font-size:2em;
-font-weight:700;
-color:#bbb;
-}
-
 p {
 font-size:18px;
 }
@@ -69,4 +58,8 @@ color:#bbb;
 color:#444;
 }
 
-
+.nav-link,h1,h2 {
+font-size:2em;
+font-weight:700;
+color:#bbb;
+}
