@@ -71,8 +71,7 @@ color:#888;
 height:100%;
 }
 
-.view a {
-cursor:pointer;
+.view i {
 text-decoration:none;
 color:#bbb;
 }
@@ -95,7 +94,7 @@ border:3px solid #f9f9f9;
 color:#ddd;
 }
 
-.nav-link.active, a:hover,h1:hover,h2:hover {
+.nav-link.active, i:hover,a:hover,h1:hover,h2:hover {
 color:#444;
 }
 
