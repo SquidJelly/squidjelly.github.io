@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,14 +15,14 @@
 	  <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<!-- Nav Header-->
-		<div class="view align-items-center text-center">
+		<!-- Desktop Nav Header-->
+		<div class="view desktop-only align-items-center text-center">
 			<div class="row d-flex justify-content-center mt-4">
 				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly"></img>
 			</div>
 			<div class="row justify-content-center">
 				<a href="index.html" class="nav-link active mr-2 ml-2">Portfolio</a>
-				<a href="about.html" class="nav-link mr-2 ml-2">About</a>
+				<a href="about.html" class="nav-link  mr-2 ml-2">About</a>
 				<a href="contact.html" class="nav-link mr-2 ml-2">Contact</a>
 			</div>
 			<div class="row justify-content-center mt-4 mb-5">
@@ -33,6 +32,29 @@
 			</div>
 		</div>
 		<!-- End Nav Header-->
+		<!-- Mobile Nav-->
+		<nav class="navbar mobile-only navbar-expand-xs navbar-light bg-light bg-info">
+			<div class="container-fluid mt-4 mb-4">
+				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly"></img>
+				<button class="navbar-toggler  animated-button" type="button" data-toggle="collapse" data-target="#mobileBar">
+					<div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+				</button>
+				<div class="navbar-collapse collapse " id="mobileBar">
+					<ul class="navbar-nav align-items-center text-center">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Portfolio <span class="sr-only">Home</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Nav Header-->
 		<!-- Gallery -->
 		<div class="container mt-5">
 
@@ -40,9 +62,9 @@
 			<div class="row text-center">
 
 			  <!-- Grid column -->
-			  <div class="col-lg-3 col-md-12 mb-3">
+			  <div class="col-lg-3 col-md-6 mb-3">
 
-				<video class="hoverable img-fluid" src="assets/SD_title.mp4" type="video/mp4" autoplay muted loop>
+				<video class="hoverable img-fluid" src="assets/SD_title.mp4" width="100%" type="video/mp4" autoplay muted loop>
 					Your browser does not support HTML5 video.
 				</video>
 
@@ -52,7 +74,7 @@
 			  <!-- Grid column -->
 			  <div class="col-lg-3 col-md-6 mb-3">
 
-				<video class="hoverable img-fluid" src="assets/SD_jump.mp4" type="video/mp4" autoplay muted loop>
+				<video class="hoverable img-fluid" src="assets/SD_jump.mp4" width="100%" type="video/mp4" autoplay muted loop>
 					Your browser does not support HTML5 video.
 				</video>
 
@@ -62,7 +84,7 @@
 			  <!-- Grid column -->
 			  <div class="col-lg-3 col-md-6 mb-3">
 
-				<video class="hoverable img-fluid" src="assets/SD_intro.mp4" type="video/mp4" autoplay muted loop>
+				<video class="hoverable img-fluid" src="assets/SD_intro.mp4" width="100%" type="video/mp4" autoplay muted loop>
 					Your browser does not support HTML5 video.
 				</video>
 
@@ -72,7 +94,7 @@
 			  <!-- Grid column -->
 			  <div class="col-lg-3 col-md-6 mb-3">
 
-				<video class="hoverable img-fluid" src="assets/SD_Laser.mp4" type="video/mp4" autoplay muted loop>
+				<video class="hoverable img-fluid" src="assets/SD_Laser.mp4" width="100%" type="video/mp4" autoplay muted loop>
 					Your browser does not support HTML5 video.
 				</video>
 
@@ -228,6 +250,9 @@
 			}
 		  });
 	  });
+	  $('.animated-button').on('click', function () {
+			$('.animated-icon').toggleClass('open');
+		});
 	});
 	</script>
 </html>
