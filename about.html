@@ -18,7 +18,7 @@
 		<!-- Desktop Nav Header-->
 		<div class="view desktop-only align-items-center text-center">
 			<div class="row d-flex justify-content-center mt-4">
-				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly"></img>
+				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly">
 			</div>
 			<div class="row justify-content-center">
 				<a href="index.html" class="nav-link mr-2 ml-2">Portfolio</a>
@@ -26,29 +26,29 @@
 				<a href="contact.html" class="nav-link mr-2 ml-2">Contact</a>
 			</div>
 			<div class="row justify-content-center mt-4 mb-5">
-				<a href="#" title="Design" class="fas fa-drafting-compass ml-4 mr-4" alt="Design"></a>
-				<a href="#" title="Programming" class="fas fa-code ml-4 mr-4" alt="Programming"></a>
-				<a href="#" title="Art and Animation" class="fas fa-palette ml-4 mr-4" alt="Art and Animation"></a>
+				<a href="#" title="Design" class="fas fa-drafting-compass ml-4 mr-4"></a>
+				<a href="#" title="Programming" class="fas fa-code ml-4 mr-4"></a>
+				<a href="#" title="Art and Animation" class="fas fa-palette ml-4 mr-4"></a>
 			</div>
 		</div>
 		<!-- End Nav Header-->
 		<!-- Mobile Nav-->
 		<nav class="navbar mobile-only navbar-expand-xs navbar-light bg-light bg-info">
-			<div class="container-fluid mt-4 mb-4">
-				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly"></img>
+			<div class="container-fluid mt-2 mb-2">
+				<img src="assets/squid_logo.png" class="logo-mobile" alt="Squid Jelly">
 				<button class="navbar-toggler  animated-button" type="button" data-toggle="collapse" data-target="#mobileBar">
 					<div class="animated-icon"><span></span><span></span><span></span><span></span></div>
 				</button>
-				<div class="navbar-collapse collapse " id="mobileBar">
+				<div class="navbar-collapse collapse" id="mobileBar">
 					<ul class="navbar-nav align-items-center text-center">
+						<li class="nav-item">
+							<a class="nav-link mobile" href="index.html">Portfolio <span class="sr-only">Home</span></a>
+						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Portfolio <span class="sr-only">Home</span></a>
+							<a class="nav-link mobile" href="about.html">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
+							<a class="nav-link mobile" href="contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -56,40 +56,41 @@
 		</nav>
 		<!-- End Nav Header-->
 		<!-- Main Content-->
-		<div class="container mt-5">
-			<main class="main text-center ">
-				<h1 class="title mb-5">About</h1>
+		<div class="container" style="max-width: 800px;">
+			<main class="main text-center">
+				<h1 class="title">About</h1>
 				<p class="content">
-					Hello! My name is Sam Bakenhus, and I go by the online handle Squid Jelly. I grew up all across the midwest of the United States but currently reside in Rochester, NY. Since I was young I've loved all varieties of creative work but I naturally gravitated toward one thing, and I always knew that's what I wanted to do.
-					<br><br>
-					It's now been over 10 years that I've enjoyed working on games whether it's been for solo projects, collaborations, or contract.  I've worked for big global companies down to small apartment studios building for Mobile, Web, and PC.  I hold experience in nearly every aspect of game development and have worked in many different genres.  
-					I'm comfortable in a wealth of different programming languages and libraries, working with graphics, physics, logic, networking and AI.  I consider myself very self-motivated and a fast learner.  I pride myself in being a generalist game developer, bringing whatever is needed to the project. 
-					<br><br>
-					I believe we'll continue to see games grow and dominate as an artform in the years to come and I'm very much looking forward to being a part of it.
+					Hello! My name is Sam Bakenhus, and I go by the online handle Squid Jelly. I grew up all across the midwest of the United States but currently reside in Rochester, NY. Since I was young I've loved all varieties of creative work but I naturally gravitated towards one thing that I really wanted to do.
+					<br> <i class="fa fa-gamepad mt-3 mb-3" style="color:#bbb;" aria-hidden="true"></i> <br>
+					It's now been over 10 years that I've enjoyed working on games whether it's been for solo projects, collaborations, or contract.  I've worked for big global companies down to small apartment studios building for Mobile, Web, and PC.  I hold experience in nearly every aspect of game development working in many different genres.  
+					I'm comfortable in a wealth of different programming languages and libraries. Working with graphics, physics, logic, networking and AI. I pride myself on being a generalist game developer, bringing whatever is needed to the project. 
+					<br> <i class="fa fa-trophy mt-3 mb-3" style="color:#bbb;" aria-hidden="true"></i> <br>
+					Games are still a relatively new form of media.  I believe we'll continue to see them grow and dominate as an artform in the years to come and I'm very much looking forward to being a part of it.
 				</p>
 			</main>
 		</div>
 		<!-- End Content-->
-	</body>
-	<footer class="page-footer font-small">
+		<!-- Copyright Footer -->
+		<footer class="page-footer font-small">
 		<div class="container">
-		<!-- Copyright -->
-		<div class="copy text-center py-3 mt-5">© 2019 Squid Jelly</div>
-		<!-- Copyright -->
+			<div class="copy text-center py-3 mt-5">© 2019 Squid Jelly</div>
 		</div>
-	</footer>
-	<!-- SCRIPTS -->
-	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Bootstrap core JavaScript -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<!-- Initializations -->
-	<script type="text/javascript"> 
-	$(document).ready(function() {
-	  $('.animated-button').on('click', function () {
-			$('.animated-icon').toggleClass('open');
+		</footer>
+		<!-- Copyright Footer -->
+		
+		<!-- SCRIPTS -->
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Initializations -->
+		<script> 
+		$(document).ready(function() {
+		  $('.animated-button').on('click', function () {
+				$('.animated-icon').toggleClass('open');
+			});
 		});
-	});
-	</script>
+		</script>
+	</body>
 </html>
 	

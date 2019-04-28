@@ -18,7 +18,7 @@
 		<!-- Desktop Nav Header-->
 		<div class="view desktop-only align-items-center text-center">
 			<div class="row d-flex justify-content-center mt-4">
-				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly"></img>
+				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly">
 			</div>
 			<div class="row justify-content-center">
 				<a href="index.html" class="nav-link mr-2 ml-2">Portfolio</a>
@@ -26,29 +26,29 @@
 				<a href="contact.html" class="nav-link active mr-2 ml-2">Contact</a>
 			</div>
 			<div class="row justify-content-center mt-4 mb-5">
-				<a href="#" title="Design" class="fas fa-drafting-compass ml-4 mr-4" alt="Design"></a>
-				<a href="#" title="Programming" class="fas fa-code ml-4 mr-4" alt="Programming"></a>
-				<a href="#" title="Art and Animation" class="fas fa-palette ml-4 mr-4" alt="Art and Animation"></a>
+				<a href="#" title="Design" class="fas fa-drafting-compass ml-4 mr-4"></a>
+				<a href="#" title="Programming" class="fas fa-code ml-4 mr-4"></a>
+				<a href="#" title="Art and Animation" class="fas fa-palette ml-4 mr-4"></a>
 			</div>
 		</div>
 		<!-- End Nav Header-->
 		<!-- Mobile Nav-->
 		<nav class="navbar mobile-only navbar-expand-xs navbar-light bg-light bg-info">
-			<div class="container-fluid mt-4 mb-4">
-				<img src="assets/squid_logo.png" class="logo" alt="Squid Jelly"></img>
+			<div class="container-fluid mt-2 mb-2">
+				<img src="assets/squid_logo.png" class="logo-mobile" alt="Squid Jelly">
 				<button class="navbar-toggler  animated-button" type="button" data-toggle="collapse" data-target="#mobileBar">
 					<div class="animated-icon"><span></span><span></span><span></span><span></span></div>
 				</button>
 				<div class="navbar-collapse collapse " id="mobileBar">
 					<ul class="navbar-nav align-items-center text-center">
+						<li class="nav-item">
+							<a class="nav-link mobile" href="index.html">Portfolio <span class="sr-only">Home</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link mobile" href="about.html">About</a>
+						</li>
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Portfolio <span class="sr-only">Home</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="about.html">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html">Contact</a>
+							<a class="nav-link mobile" href="contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -56,40 +56,41 @@
 		</nav>
 		<!-- End Nav Header-->
 		<!-- Main Content -->
-		<div class="container mt-5" style="min-height: 600px;">
-			<main class="main text-center ml-5 mr-5" >
-				<h1 class="title mb-5">
+		<div class="container" style="min-height: 600px; max-width: 800px">
+			<main class="main text-center" >
+				<h1 class="title">
 				Contact
 				</h1>
 				<p class="content">
 				You can reach me through email at <a href="mailto:SamBakenhus@gmail.com">SamBakenhus@gmail.com</a>
 				<br><br>
-				Whether you're a first time developer that needs help making your project a reality or a company looking to speed up your projects development, my services are currently on offer :)
+				Whether you're a first time developer that needs help making your project a reality or a company looking to speed up your projects development, my services are currently available :)
 				</p>
 			</main>
 		</div>
 		<!-- End Content -->
-	</body>
-	<footer class="page-footer font-small">
+		<!-- Copyright Footer -->
+		<footer class="page-footer font-small">
 		<div class="container">
-		<!-- Copyright -->
-		<div class="copy text-center py-3 mt-5">© 2019 Squid Jelly</div>
-		<!-- Copyright -->
+			<div class="copy text-center py-3 mt-5">© 2019 Squid Jelly</div>
 		</div>
-	</footer>
-	<!-- SCRIPTS -->
-	
-	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Bootstrap core JavaScript -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<!-- Initializations -->
-	<script type="text/javascript"> 
-	$(document).ready(function() {
-	  $('.animated-button').on('click', function () {
-			$('.animated-icon').toggleClass('open');
+		</footer>
+		<!-- Copyright Footer -->
+		
+		<!-- SCRIPTS -->
+		
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Bootstrap core JavaScript -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- Initializations -->
+		<script> 
+		$(document).ready(function() {
+		  $('.animated-button').on('click', function () {
+				$('.animated-icon').toggleClass('open');
+			});
 		});
-	});
-	</script>
+		</script>
+	</body>
 </html>
 	
