@@ -246,10 +246,11 @@
 			  $('video').each(function(){
 				if ($(this).is(":in-viewport")) 
 				{
-					if($(this)[0].readyState == HTMLMediaElement.HAVE_ENOUGH_DATA)
-						$(this)[0].play();
-					else
-						$(this)[0].load();
+					var vid = $(this)[0];
+					if(vid.readyState == HTMLMediaElement.HAVE_NOTHING || vid.readyState == HTMLMediaElement.HAVE_METADATA)
+						vid.load();
+					else if(vid.readyState == HTMLMediaElement.HAVE_ENOUGH_DATA)
+						vid.play();
 				}
 			  });
 		  });
