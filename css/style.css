@@ -12,6 +12,17 @@ max-width:100%;
     margin-bottom: 2rem;
 	font-size:60px;
 	}
+	
+	.sub-title{
+		font-weight: bold;
+		font-size:1.25em;
+	}
+	
+	.tech-col
+	{
+		margin-left: 60px;
+		padding-left: 60px;
+	}
 
 	.content {
 	font-size:1.25em;
@@ -28,13 +39,24 @@ max-width:100%;
     margin-bottom: 1rem;
 	font-size:30px;
 	}
+	
+	.sub-title{
+		font-weight: bold;
+		font-size:0.85rem;
+	}
+	
+	.tech-col
+	{
+		margin-left: 30px;
+		padding-left: 30px;
+	}
 
 	.content {
 	font-size:0.85rem;
 	}
 }
 
-.title {
+.title, .sub-title {
 	color:#444;
 }
 
