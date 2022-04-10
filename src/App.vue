@@ -12,7 +12,6 @@ import FooterComponent from "./components/FooterComponent.vue";
 </template>
 
 <style lang="scss">
-@use "./assets/scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap");
 
 #app {
