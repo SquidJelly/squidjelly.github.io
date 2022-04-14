@@ -20,7 +20,13 @@ async function toggle() {
 <template>
   <!-- Desktop Nav Header-->
   <header class="desktop-only">
-    <img src="../assets/Squid_Logo.png" class="logo" alt="SquidJelly" />
+    <router-link :to="{ name: 'portfolio' }">
+        <img
+          src="../assets/Squid_Logo.png"
+          class="logo"
+          alt="SquidJelly"
+        />
+      </router-link>
     <nav aria-label="primary">
       <router-link class="nav-link" :to="{ name: 'portfolio' }"
         >Portfolio</router-link
@@ -40,11 +46,13 @@ async function toggle() {
   <!-- Mobile Nav Header-->
   <header class="mobile-only">
     <div class="container-mobile">
-      <img
-        src="../assets/Squid_Logo.png"
-        class="logo-mobile"
-        alt="Squid Jelly"
-      />
+      <router-link :to="{ name: 'portfolio' }">
+        <img
+          src="../assets/Squid_Logo.png"
+          class="logo-mobile"
+          alt="SquidJelly"
+        />
+      </router-link>
       <button @click="toggle">
         <div id="hamburger">
           <span></span>
